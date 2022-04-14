@@ -1,0 +1,97 @@
+package excercise;
+//
+//
+//import java.io.*;
+import java.util.*;
+
+/*
+ * https://coderpad.io/XYWEAEP6
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+
+
+//
+//public class DropboxTest {
+//
+//  public static void main(String[] args) {
+//    String pathName = "folder1";
+//    ArrayList<String> fileNameList = new ArrayList<String>();
+//    getFilePaths(pathName, fileNameList);
+//    
+//    String[][] duplicates = findDuplicates(fileNameList);
+//  }
+// 
+//  public static void getFilePaths(string pathName, ArrayList<String> fileNameList) {
+//    Directory d = new Director(pathName);
+//    string[] fileNames = d.Files;
+//    for (string fileName : fileNames) {
+//      fileNameList.add(fileName);
+//    }
+//        
+//    string directorNames = d.Directories;
+//    for (string directoryName : directorNames) {
+//      getFilePaths(directorName, fileNameList);
+//    }
+//  }
+//  
+//  
+//  public static String[][] findDuplicates(ArrayList<String> fileNameList) {
+//    HashMap<String, ArrayList<String>> dups = new HashMap<String, ArrayList<String>>();
+//    HashSet<Integer> fileSize = new HashSet<Integer>();
+//    File f;
+//    for (string fileName : fileNameList) {
+//      f = File(fileName);
+//      if (fileSize.contains(f.size) && dups.containsKey(f.content)) {
+//        dups.put(f.content, ((ArrayList<String>) dups.get(f.content).add(f.path));
+//      }
+//      else {
+//        ArrayList<String> fileList = new ArrayList<String>();
+//        fileList.add(f.path);
+//        dups.put(f.content, fileList);
+//        fileSize.add(f.size);
+//      }
+//    }
+//    
+//    String[][] dupfiles = new String[][];      
+//    //remove the dups
+//    for (String key in dups.keySet()) {
+//      if ((dups.get(key)).size == 1) {
+//        dups.remove(key);
+//      }
+//      else {
+//        ArrayList<String> fileList = dups.get(key);
+//        String[] dupFileNames = new String[];
+//        for (String fileNames in fileList) {
+//          dupFileNames.add(fileNames);
+//        }
+//        dupfiles.add(dupFileNames);
+//      }
+//    }
+//    return dupfiles
+//  }
+  
+//}
+
+
+/* 
+Your previous Plain Text content is preserved below:
+
+Given a path to a directory, return a list of sets. 
+Each set should contain files of the same content.
+  
+For example, find_duplicates("/foo/") might return
+[ ["/foo/bar.png", "/foo/images/foo.png"],
+  ["/foo/file.tmp", "/foo/other.temp", "/foo/temp/baz/that.foo"]
+]
+
+
+k, v
+k == content
+v linkedlist of files
+
+
+checksum
+ */
