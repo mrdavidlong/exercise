@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class FileReaderTest {
     public static void main(String[] args) throws FileNotFoundException {
-        //Scanner in = new Scanner(new FileReader("/Users/davidlong/IdeaProjects/java/excercise/src/excercise/file.txt"));
         Scanner in = new Scanner(new FileReader("exercise/src/excercise/file.txt"));
         while (in.hasNextInt()) {
             int value = in.nextInt();
