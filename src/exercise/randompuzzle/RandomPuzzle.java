@@ -4,6 +4,19 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/*
+From:
+    {0, 1, 3},
+    {4, 2, 5},
+    {7, 8, 6}
+To:
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 0}
+
+Find min step and path
+ */
+
 public class RandomPuzzle {
     public static int minStepsToSolveWithPath(int[][] board, List<Board> path) {
         Board originalBoard = new Board(board);
@@ -43,11 +56,6 @@ public class RandomPuzzle {
                 {7, 8, 6}
         };
 
-//        int target[][] = new int[][]{
-//                {1, 2, 3},
-//                {4, 5, 6},
-//                {7, 8, 0}
-//        };
         List<Board> path = new LinkedList<>();
         int minSteps = minStepsToSolveWithPath(board, path);
 
@@ -58,6 +66,30 @@ public class RandomPuzzle {
         }
 
         System.out.println("Min steps: " + minSteps);
+/*
+Output:
+Min path:
+0 1 3
+4 2 5
+7 8 6
 
+1 0 3
+4 2 5
+7 8 6
+
+1 2 3
+4 0 5
+7 8 6
+
+1 2 3
+4 5 0
+7 8 6
+
+1 2 3
+4 5 6
+7 8 0
+
+Min steps: 5
+*/
     }
 }
